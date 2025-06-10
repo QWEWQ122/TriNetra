@@ -1,3 +1,4 @@
+bash```
 ╔╦╗┬─┐┬╔╗╔┌─┐┌┬┐┬─┐┌─┐
  ║ ├┬┘│║║║├┤  │ ├┬┘├─┤
  ╩ ┴└─┴╝╚╝└─┘ ┴ ┴└─┴ ┴
@@ -77,3 +78,4 @@ CSRF Options:
 Output Options:
   -o, --output OUTPUT   JSON output file for all findings (default: None)
   --csv CSV             Optional CSV output of endpoints only (default: None)
+  ```
