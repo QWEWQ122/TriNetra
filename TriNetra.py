@@ -1,7 +1,7 @@
 ############################################
-#Coding: utf-8				   #
+#Coding: utf-8				               #
 #Author : Debajyoti0-0                     #
-#VSersion: 1.0.0                           #                                
+#Version: 1.0                              #                                
 #Github : https://github.com/Debajyoti0-0/ #
 ############################################
 
