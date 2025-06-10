@@ -78,6 +78,10 @@ CSV report (when `--csv file.csv`) contains one row per endpoint with optional *
 
 ---
 
+## ✨ Visual Demo
+
+![alt text](https://github.com/Debajyoti0-0/TriNetra/blob/main/img/TriNetra.png)
+
 ## 📂 Repository layout
 
 ```text
