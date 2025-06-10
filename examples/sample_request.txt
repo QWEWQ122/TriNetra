@@ -1,0 +1,5 @@
+GET /admin/dashboard HTTP/1.1
+Host: example.com
+User-Agent: Mozilla/5.0 (TriNetra Scanner)
+Accept: /
+Connection: close
