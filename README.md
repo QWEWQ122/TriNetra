@@ -106,7 +106,7 @@ Pull-requests and feature suggestions are welcome! Please open an issue first to
 2. Commit your changes with clear messages.
 3. Open a PR describing *what* & *why*.
 
-Check *docs/CONTRIBUTING.md* for coding guidelines.
+Check *[docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)* for coding guidelines.
 
 ---
 
