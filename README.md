@@ -33,7 +33,7 @@
 
 ```bash
 # 1. Clone
-git clone https://github.com/yourname/TriNetra.git
+git clone https://github.com/Debajyoti0-0/TriNetra.git
 cd TriNetra
 
 # 2. (Recommended) Create virtual-env
