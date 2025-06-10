@@ -90,7 +90,7 @@ TriNetra/
 ├── TriNetra.py         # Main executable script
 ├── requirements.txt    # Pinned dependencies
 ├── .gitignore          # Common Python ignores
-├── LICENSE             # MIT
+├── LICENSE             # GPL-3.0
 ├── docs/               # Additional docs & screenshots
 │   └── usage.md
 ├── examples/           # Sample raw requests & wordlists
@@ -116,7 +116,7 @@ Check *[docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)* for coding guidelines.
 
 ## 🛡️ License
 
-TriNetra is released under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+TriNetra is released under the **GPL-3.0 License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
