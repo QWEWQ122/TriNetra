@@ -10,7 +10,8 @@
 
 &#x20;
 
-> **TriNetra** is a fast, smart, multi-threaded crawler that digs *below* the surface of your target web-site to uncover hidden endpoints, API keys, and JWTs. Built for bug-hunters, penetration testers and OSINT researchers, it combines coloured Rich output with powerful features like Tor routing and CSRF-aware requests — all from the comfort of your terminal.
+> **TriNetra** is a fast, smart, multi-threaded crawler that digs *below* the surface of your target web-site to uncover hidden endpoints, API keys, and JWTs. Built for bug-hunters, penetration testers and OSINT researchers, it combines coloured Rich output with powerful features like Tor routing and CSRF-aware requests
+> — all from the comfort of your terminal.
 
 ---
 
