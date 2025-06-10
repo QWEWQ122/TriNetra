@@ -1,6 +1,6 @@
-# TriNetra 🔎🌐
+# TriNetra 🔱
 
-*The Third Eye that Sees Beyond the Surface*
+*The Third Eye that Sees Beyond the Surface..🔎🌐*
 
 ```text
 ╔╦╗┬─┐┬╔╗╔┌─┐┌┬┐┬─┐┌─┐
