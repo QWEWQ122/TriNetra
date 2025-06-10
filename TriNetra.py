@@ -612,7 +612,7 @@ def main(argv: Optional[Iterable[str]] = None):
                 unique_printed_global.add(item['endpoint'])
 
             if not endpoints_to_show:
-                console.print("  🤷 [yellow]No new endpoints found for this target.[/yellow]\n")
+                console.print("🤷 [yellow]No new endpoints found for this target.[/yellow]\n")
                 continue
 
             table = Table(show_header=True, header_style="bold blue", box=None)
